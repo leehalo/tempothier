@@ -1,0 +1,49 @@
+:root {
+    --color-primary:#2633bd;
+    --color-secondary: #eeebeb;
+    --azul-royal: #33c7da;
+    --azul-profundo: #5eSeSe;
+    --fundo-card-timer: rgba(108, 77, 167, 0.3);
+    --lils: #d0a1ff;
+    --linear-botes: linear-gradient (180deg, #72ffd2 0%，#821ab2 100%);
+    --fundo-card: rgba (255, 255, 255, 0.50); 
+    --fundo-card-concludo: rgba(120, 219, 198, 0.4);
+}
+
+[data-contexto="foco"] {
+    --main-bg-color: radial-gradient(circle, #59eff7 0%, #cf12cc 48.44%, #211574 100%);
+}
+
+[data-contexto="descanso-curto"] {
+    --main-bg-color: linear-gradient(180deg, #ecff7f 0%, #6f3aff 48.44%, #84c5ff 100%);
+}
+
+[data-contexto="descanso-longo"] {
+    --main-bg-color: linear-gradient(180deg, #7dffdc 0%, #4f9bff 48.44%, #e389ff 100%);
+}
+
+*{box-sizing:border-box;
+    max-width:100%;
+}
+
+html{
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    font-size:10px;
+}
+body{
+    min-height: 100vh;
+    background: url("/imagens/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'unbounded', cursive;
+}
+
+.app__logo-figure {
+    display:flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
